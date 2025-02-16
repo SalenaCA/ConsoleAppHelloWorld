@@ -15,17 +15,23 @@ Console.WriteLine("is he retired?" + isRetired);
 
 // declare vaiables
 string Fname= string.Empty; // give variable default value 
+string Lname = string.Empty;
 int User_age = 0;
 
-Console.WriteLine("Enter your name: ");
-name = Console.ReadLine(); // receive imput from user
+// prompt user for input
+Console.WriteLine("Enter your first name: ");
+Fname = Console.ReadLine(); // receive imput from user
+Console.WriteLine("Enter your last name: ");
+Lname= Console.ReadLine();
+
 
 Console.WriteLine("Enter your age: ");
 User_age = Convert.ToInt32(Console.ReadLine()); // input entered is a string have to convert it 
 
 int workingAge = retirementAge - User_age;
 
-Console.WriteLine("Full name:" + name);
+// output the information 
+Console.WriteLine("Full name:" + Fname + Lname);
 Console.WriteLine("Age:" + User_age);
 Console.WriteLine("Working years remaining:" + workingAge);
 
