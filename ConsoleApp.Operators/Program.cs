@@ -71,3 +71,5 @@ Console.WriteLine("modulous 2" + num1);
 num1 *= 10;
 Console.WriteLine("multiply by 10" + num1);
 
+
+
